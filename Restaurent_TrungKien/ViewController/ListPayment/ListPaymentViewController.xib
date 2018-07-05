@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListPaymentViewController">
+            <connections>
+                <outlet property="btnListPayment" destination="BSt-C1-YTV" id="vGL-pn-lMX"/>
+                <outlet property="btnListUser" destination="dUe-hv-7M9" id="KUi-2A-8nh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAf-x9-l2X">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEf-n1-cbc">
+                            <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="QZX-FX-XAm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="eJM-4X-YmI"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poB-Kx-WIu">
+                            <rect key="frame" x="49" y="32" width="277" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cart.png" translatesAutoresizingMaskIntoConstraints="NO" id="rly-rz-POT">
+                            <rect key="frame" x="341" y="30" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="WTd-Cp-5Wq"/>
+                                <constraint firstAttribute="height" constant="24" id="Y6F-FH-pk7"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emZ-fb-6N0">
+                            <rect key="frame" x="331" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="zyW-aj-37z"/>
+                            </constraints>
+                            <connections>
+                                <action selector="onTable:" destination="-1" eventType="touchUpInside" id="j0R-Eh-2hj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.51764705879999995" green="0.14117647059999999" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZEf-n1-cbc" secondAttribute="bottom" id="5Kr-xg-9SY"/>
+                        <constraint firstAttribute="trailing" secondItem="emZ-fb-6N0" secondAttribute="trailing" id="CTn-Zt-nc0"/>
+                        <constraint firstItem="ZEf-n1-cbc" firstAttribute="leading" secondItem="CAf-x9-l2X" secondAttribute="leading" id="LOI-TM-5EK"/>
+                        <constraint firstItem="rly-rz-POT" firstAttribute="centerX" secondItem="emZ-fb-6N0" secondAttribute="centerX" id="ObD-jZ-49g"/>
+                        <constraint firstItem="poB-Kx-WIu" firstAttribute="leading" secondItem="ZEf-n1-cbc" secondAttribute="trailing" constant="5" id="SLj-FZ-ckf"/>
+                        <constraint firstItem="rly-rz-POT" firstAttribute="centerY" secondItem="emZ-fb-6N0" secondAttribute="centerY" id="ZRz-dB-pj2"/>
+                        <constraint firstItem="poB-Kx-WIu" firstAttribute="centerY" secondItem="ZEf-n1-cbc" secondAttribute="centerY" id="bDd-m8-IgX"/>
+                        <constraint firstItem="emZ-fb-6N0" firstAttribute="top" secondItem="CAf-x9-l2X" secondAttribute="top" constant="20" id="hZ0-R0-84O"/>
+                        <constraint firstAttribute="trailing" secondItem="poB-Kx-WIu" secondAttribute="trailing" constant="49" id="k52-oX-usw"/>
+                        <constraint firstAttribute="bottom" secondItem="emZ-fb-6N0" secondAttribute="bottom" id="lCT-qu-tBf"/>
+                        <constraint firstAttribute="height" constant="64" id="naf-5x-Zlp"/>
+                        <constraint firstItem="ZEf-n1-cbc" firstAttribute="top" secondItem="CAf-x9-l2X" secondAttribute="top" constant="20" id="wd6-A7-e6K"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUe-hv-7M9">
+                    <rect key="frame" x="20" y="84" width="335" height="44"/>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0rV-br-e3h"/>
+                    </constraints>
+                    <state key="normal" title="List User">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onListUser:" destination="-1" eventType="touchUpInside" id="ZEQ-iV-nhW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSt-C1-YTV">
+                    <rect key="frame" x="20" y="148" width="335" height="44"/>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="83D-jq-6Ax"/>
+                    </constraints>
+                    <state key="normal" title="List Payment">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onListPayment:" destination="-1" eventType="touchUpInside" id="JHG-ck-gHO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CAf-x9-l2X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BCZ-ge-xCO"/>
+                <constraint firstAttribute="trailing" secondItem="BSt-C1-YTV" secondAttribute="trailing" constant="20" id="Gl4-09-xXD"/>
+                <constraint firstItem="dUe-hv-7M9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="KgK-FY-JDE"/>
+                <constraint firstItem="CAf-x9-l2X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TQa-Yq-I6u"/>
+                <constraint firstItem="BSt-C1-YTV" firstAttribute="top" secondItem="dUe-hv-7M9" secondAttribute="bottom" constant="20" id="WLU-9j-meI"/>
+                <constraint firstAttribute="trailing" secondItem="CAf-x9-l2X" secondAttribute="trailing" id="j5R-TX-nxz"/>
+                <constraint firstItem="dUe-hv-7M9" firstAttribute="top" secondItem="CAf-x9-l2X" secondAttribute="bottom" constant="20" id="pIl-Jj-ThA"/>
+                <constraint firstItem="BSt-C1-YTV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="pvZ-DF-WV3"/>
+                <constraint firstAttribute="trailing" secondItem="dUe-hv-7M9" secondAttribute="trailing" constant="20" id="z1l-Z5-bel"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_cart.png" width="65" height="65"/>
+    </resources>
+</document>
