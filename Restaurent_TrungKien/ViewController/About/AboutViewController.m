@@ -7,7 +7,6 @@
 //
 
 #import "AboutViewController.h"
-#import "SWRevealViewController.h"
 
 @interface AboutViewController ()
 
@@ -21,7 +20,7 @@
 }
 #pragma mark Back
 - (IBAction)onBack:(id)sender {
-    [self.revealViewController revealToggleAnimated:true];
+    [self.navigationController popViewControllerAnimated:true];
 }
 #pragma mark Call
 - (IBAction)onCall:(id)sender {

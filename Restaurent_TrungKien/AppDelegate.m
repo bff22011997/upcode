@@ -13,8 +13,6 @@
 #import "HomeViewController.h"
 #import "PayPalMobile.h"
 #import "SceenViewController.h"
-#import "SWRevealViewController.h"
-#import "MenuViewController.h"
 
 
 @interface AppDelegate ()
@@ -76,10 +74,7 @@
     HomeViewController *home = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
     UINavigationController *narHome = [[UINavigationController alloc]initWithRootViewController:home];
     narHome.navigationBarHidden = YES;
-    
-    MenuViewController *menu = [[MenuViewController alloc]init];
-    SWRevealViewController *reveal = [[SWRevealViewController alloc]initWithRearViewController:menu frontViewController:narHome];
-    self.window.rootViewController = reveal;
+    self.window.rootViewController = narHome;
     [self.window makeKeyAndVisible];
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
